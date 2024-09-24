@@ -1,3 +1,22 @@
 {
-  "extends": "@react-native/typescript-config/tsconfig.json"
+  "extends": "@react-native/typescript-config/tsconfig.json",
+  "compilerOptions": {
+    "jsx": "react", // Enable JSX support
+    "types": [
+      "react",
+      "react-native",
+      "react-dom" // Include types for React DOM (for web)
+    ],
+    "allowSyntheticDefaultImports": true, // Allow default imports from modules without default exports
+    "strict": true, // Enable all strict type-checking options
+    "noImplicitAny": false, // Allow implicit any types (optional)
+    "lib": ["dom", "es6"] // Add DOM and ES6 lib support
+  },
+  "include": [
+    "src/**/*" // Include all files in the src directory
+  ],
+  "exclude": [
+    "node_modules", // Exclude node_modules
+    "**/__tests__/**/*" // Exclude test files
+  ]
 }
