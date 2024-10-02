@@ -1,13 +1,5 @@
 import React from 'react';
-import {
-  SafeAreaView,
-  ScrollView,
-  StatusBar,
-  StyleSheet,
-  Text,
-  View,
-  TouchableOpacity,
-} from 'react-native';
+import { SafeAreaView, ScrollView, StatusBar, StyleSheet, Text, View, TouchableOpacity, } from 'react-native';
 import {SafeAreaProvider} from 'react-native-safe-area-context';
 import Icon from 'react-native-vector-icons/FontAwesome';
 import Octicons from 'react-native-vector-icons/Octicons';
@@ -50,6 +42,11 @@ function App() {
             <BookSection title="ACC501 - Business Finance" />
             <BookSection title="BIF401 - Bioinformatics I" />
             <BookSection title="BIF602 - Bioinformatics Computing" />
+            <BookSection title="BIF604 - Special Topics in Bioinformatics" />
+            <BookSection title="BIO101 - Basic I-Biology" />
+            <BookSection title="BIO102 - Basic II-Chemistry" />
+            <BookSection title="BIO301 - Essentials of Genetics" />
+            <BookSection title="BIO503 - Biological Physics" />
           </View>
         </ScrollView>
       </SafeAreaView>
