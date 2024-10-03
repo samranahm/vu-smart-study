@@ -9,7 +9,7 @@ const BookSection = ({title}) => {
   };
   return (
     <View style={styles.bookSection}>
-      <Text style={styles.title}>{title}</Text>
+      <Text numberOfLines={1} ellipsizeMode='tail' style={styles.title}>{title}</Text>
       <View style={styles.downloadReadCon}>
         <TouchableOpacity style={styles.button}>
           <Text style={styles.buttonText}>DOWNLOAD</Text>
@@ -38,7 +38,7 @@ const styles = StyleSheet.create({
     marginBottom: 20, // Add some spacing between sections
   },
   title: {
-    fontSize: 19,
+    fontSize: 17,
     color: '#fff',
     alignSelf: 'center',
     fontWeight: 'bold',

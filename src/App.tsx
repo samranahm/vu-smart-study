@@ -1,12 +1,14 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { SafeAreaView, ScrollView, StatusBar, StyleSheet, Text, View, TouchableOpacity, } from 'react-native';
 import {SafeAreaProvider} from 'react-native-safe-area-context';
 import Icon from 'react-native-vector-icons/FontAwesome';
 import Octicons from 'react-native-vector-icons/Octicons';
 import Entypo from 'react-native-vector-icons/Entypo';
-import BookSection from './components/BookSection';
+import HandOuts from './Screens/Handouts';
+import BookMark from './Screens/Bookmark';
 
 function App() {
+  const [activePage, setActivePage] = useState('HANDOUTS');
   return (
     <SafeAreaProvider>
       <SafeAreaView style={styles.safeArea}>
@@ -26,28 +28,26 @@ function App() {
               </View>
             </View>
             <View style={styles.buttonContainer}>
-              <TouchableOpacity style={styles.button}>
+              <TouchableOpacity
+                style={styles.button}
+                onPress={() => setActivePage('HANDOUTS')}>
                 <Text style={styles.buttonText}>HANDOUTS</Text>
               </TouchableOpacity>
 
-              <TouchableOpacity style={styles.button}>
+              <TouchableOpacity
+                style={styles.button}
+                onPress={() => setActivePage('BOOKMARK')}>
                 <Text style={styles.buttonText}>BOOKMARK</Text>
               </TouchableOpacity>
             </View>
           </View>
 
           {/* Use the BookSection component */}
-          <View style={styles.body}>
-            <BookSection title="ACC311 - Fundamentals of Auditing" />
-            <BookSection title="ACC501 - Business Finance" />
-            <BookSection title="BIF401 - Bioinformatics I" />
-            <BookSection title="BIF602 - Bioinformatics Computing" />
-            <BookSection title="BIF604 - Special Topics in Bioinformatics" />
-            <BookSection title="BIO101 - Basic I-Biology" />
-            <BookSection title="BIO102 - Basic II-Chemistry" />
-            <BookSection title="BIO301 - Essentials of Genetics" />
-            <BookSection title="BIO503 - Biological Physics" />
-          </View>
+          {activePage === 'HANDOUTS' ? (
+           <HandOuts />
+          ) : (
+            <BookMark />
+          )}
         </ScrollView>
       </SafeAreaView>
     </SafeAreaProvider>
