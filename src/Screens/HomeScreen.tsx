@@ -1,8 +1,8 @@
 import React, {useState} from 'react';
 import {SafeAreaView, ScrollView, StatusBar, StyleSheet} from 'react-native';
 import {SafeAreaProvider} from 'react-native-safe-area-context';
-import HandOuts from '../Screens/Handouts';
-import BookMark from '../Screens/Bookmark';
+import HandOuts from '../components/Handouts';
+import BookMark from '../components/Bookmark';
 import Header from '../components/Header';
 
 const HomeScreen = ()=> {
