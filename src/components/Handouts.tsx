@@ -1,11 +1,11 @@
 import React from "react";
 import { View, StyleSheet } from "react-native";
-import BookSection from "../components/BookSection";
+import BookSection from "./BookSection";
 
 const HandOuts = () => {
   return (
     <View style={styles.body}>
-      <BookSection title="ACC311 - Fundamentals of Auditing" pdfUrl={"https://vukhanpur.com/handouts/EDU301.pdf"} />
+      <BookSection title="ACC311 - Fundamentals of Auditing" pdfUrl={"https://www.vu.edu.pk/downloads/PSP_Application.pdf"} />
       <BookSection title="ACC501 - Business Finance" pdfUrl={"https://vukhanpur.com/handouts/EDU301.pdf"}/>
       <BookSection title="BIF401 - Bioinformatics I" pdfUrl={"https://vukhanpur.com/handouts/EDU301.pdf"}/>
       <BookSection title="BIF602 - Bioinformatics Computing" pdfUrl={"https://vukhanpur.com/handouts/EDU301.pdf"}/>

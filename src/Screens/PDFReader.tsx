@@ -2,7 +2,7 @@ import React from 'react';
 import { View, Button, StyleSheet } from 'react-native';
 import { RouteProp } from '@react-navigation/native';
 import { StackNavigationProp } from '@react-navigation/stack';
-// import Pdf from 'react-native-pdf'; 
+import Pdf from 'react-native-pdf'; 
 import { RootStackParamList } from '../App'; // Import the RootStackParamList type
 
 type PDFReaderProps = {
@@ -15,8 +15,9 @@ const PDFReader: React.FC<PDFReaderProps> = ({ route, navigation }) => {
 
   return (
     <View style={styles.container}>
-      {/* Render the PDF file
+      
       <Pdf
+      trustAllCerts={false}
         source={{ uri: pdfUrl, cache: true }} // Load the PDF from the provided URL
         style={styles.pdf} // Apply styles to the PDF component
         onLoadComplete={(numberOfPages, filePath) => {
@@ -31,7 +32,7 @@ const PDFReader: React.FC<PDFReaderProps> = ({ route, navigation }) => {
         onPressLink={(uri) => {
           console.log(`Link pressed: ${uri}`);
         }}
-      /> */}
+      />
       <Button title="Close" onPress={() => navigation.goBack()} />
     </View>
   );
