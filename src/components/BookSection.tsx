@@ -1,20 +1,22 @@
 import React, { useState } from 'react';
 import { View, Text, Button, StyleSheet, TouchableOpacity } from 'react-native';
 import Icon from 'react-native-vector-icons/FontAwesome';
-import PDFReader from '../Screens/PDFReader'; // Make sure the path is correct
+import { useNavigation } from '@react-navigation/native';
+import { StackNavigationProp } from '@react-navigation/stack';
+import { RootStackParamList } from '../App';
 
-// Define the props type for the BookSection component
 interface BookSectionProps {
   title: string;
-  pdfUrl: string; // Assuming pdfUrl is a string
+  pdfUrl: string;
 }
+type BookSectionNavigationProp = StackNavigationProp<RootStackParamList, 'PDF'>;
 
 const BookSection: React.FC<BookSectionProps> = ({ title, pdfUrl }) => {
-  const [showReader, setShowReader] = useState(false);
   const [iconColor, setIconColor] = useState('#fff');
+  const navigation = useNavigation<BookSectionNavigationProp>(); // Use the typed navigation
 
   const handleRead = () => {
-    setShowReader(true); // Show the PDFReader when the button is pressed
+      navigation.navigate('PDF', { pdfUrl });
   };
 
   const iconPress = () => {
@@ -23,40 +25,34 @@ const BookSection: React.FC<BookSectionProps> = ({ title, pdfUrl }) => {
 
   return (
     <View style={styles.bookSection}>
-      {showReader ? (
-        <PDFReader pdfUrl={pdfUrl} onClose={() => setShowReader(false)} />
-      ) : (
-        <>
-          <Text numberOfLines={1} ellipsizeMode='tail' style={styles.title}>
-            {title}
-          </Text>
-          <View style={styles.downloadReadCon}>
-            <TouchableOpacity style={styles.button}>
-              <Text style={styles.buttonText}>DOWNLOAD</Text>
-            </TouchableOpacity>
-            <TouchableOpacity style={styles.button} onPress={handleRead}>
-              <Text style={styles.buttonText}>READ</Text>
-            </TouchableOpacity>
-          </View>
-          <View style={styles.bookIcon}>
-            <View style={styles.detailButton}>
+      <Text numberOfLines={1} ellipsizeMode="tail" style={styles.title}>
+        {title}
+      </Text>
+      <View style={styles.downloadReadCon}>
+        <TouchableOpacity style={styles.button}>
+          <Text style={styles.buttonText}>DOWNLOAD</Text>
+        </TouchableOpacity>
+        <TouchableOpacity style={styles.button} onPress={handleRead}>
+          <Text style={styles.buttonText}>READ</Text>
+        </TouchableOpacity>
+      </View>
+      <View style={styles.bookIcon}>
+      <View style={styles.detailButton}>
               <Button title="Book Details" color={'#1a70d5'} />
             </View>
-            <View style={styles.customIcon}>
-              <TouchableOpacity onPress={iconPress}>
-                <Icon name="bookmark" size={21} color={iconColor} />
-              </TouchableOpacity>
-            </View>
-          </View>
-        </>
-      )}
+        <View style={styles.customIcon}>
+        <TouchableOpacity onPress={iconPress}>
+          <Icon name="bookmark" size={21} color={iconColor} />
+        </TouchableOpacity>
+        </View>
+      </View>
     </View>
   );
 };
 
 const styles = StyleSheet.create({
   bookSection: {
-    marginBottom: 20, // Add some spacing between sections
+    marginBottom: 20,
   },
   title: {
     fontSize: 17,
