@@ -406,7 +406,7 @@
     "@babel/helper-create-regexp-features-plugin" "^7.18.6"
     "@babel/helper-plugin-utils" "^7.18.6"
 
-"@babel/plugin-transform-arrow-functions@^7.0.0", "@babel/plugin-transform-arrow-functions@^7.24.7":
+"@babel/plugin-transform-arrow-functions@^7.0.0", "@babel/plugin-transform-arrow-functions@^7.0.0-0", "@babel/plugin-transform-arrow-functions@^7.24.7":
   version "7.24.7"
   dependencies:
     "@babel/helper-plugin-utils" "^7.24.7"
@@ -436,7 +436,7 @@
   dependencies:
     "@babel/helper-plugin-utils" "^7.24.8"
 
-"@babel/plugin-transform-class-properties@^7.24.1", "@babel/plugin-transform-class-properties@^7.25.4":
+"@babel/plugin-transform-class-properties@^7.0.0-0", "@babel/plugin-transform-class-properties@^7.24.1", "@babel/plugin-transform-class-properties@^7.25.4":
   version "7.25.4"
   dependencies:
     "@babel/helper-create-class-features-plugin" "^7.25.4"
@@ -449,7 +449,7 @@
     "@babel/helper-plugin-utils" "^7.24.7"
     "@babel/plugin-syntax-class-static-block" "^7.14.5"
 
-"@babel/plugin-transform-classes@^7.0.0", "@babel/plugin-transform-classes@^7.25.4":
+"@babel/plugin-transform-classes@^7.0.0", "@babel/plugin-transform-classes@^7.0.0-0", "@babel/plugin-transform-classes@^7.25.4":
   version "7.25.4"
   dependencies:
     "@babel/helper-annotate-as-pure" "^7.24.7"
@@ -584,7 +584,7 @@
   dependencies:
     "@babel/helper-plugin-utils" "^7.24.7"
 
-"@babel/plugin-transform-nullish-coalescing-operator@^7.24.1", "@babel/plugin-transform-nullish-coalescing-operator@^7.24.7":
+"@babel/plugin-transform-nullish-coalescing-operator@^7.0.0-0", "@babel/plugin-transform-nullish-coalescing-operator@^7.24.1", "@babel/plugin-transform-nullish-coalescing-operator@^7.24.7":
   version "7.24.7"
   dependencies:
     "@babel/helper-plugin-utils" "^7.24.7"
@@ -616,7 +616,7 @@
     "@babel/helper-plugin-utils" "^7.24.7"
     "@babel/plugin-syntax-optional-catch-binding" "^7.8.3"
 
-"@babel/plugin-transform-optional-chaining@^7.24.5", "@babel/plugin-transform-optional-chaining@^7.24.7", "@babel/plugin-transform-optional-chaining@^7.24.8":
+"@babel/plugin-transform-optional-chaining@^7.0.0-0", "@babel/plugin-transform-optional-chaining@^7.24.5", "@babel/plugin-transform-optional-chaining@^7.24.7", "@babel/plugin-transform-optional-chaining@^7.24.8":
   version "7.24.8"
   dependencies:
     "@babel/helper-plugin-utils" "^7.24.8"
@@ -714,7 +714,7 @@
     babel-plugin-polyfill-regenerator "^0.6.1"
     semver "^6.3.1"
 
-"@babel/plugin-transform-shorthand-properties@^7.0.0", "@babel/plugin-transform-shorthand-properties@^7.24.7":
+"@babel/plugin-transform-shorthand-properties@^7.0.0", "@babel/plugin-transform-shorthand-properties@^7.0.0-0", "@babel/plugin-transform-shorthand-properties@^7.24.7":
   version "7.24.7"
   dependencies:
     "@babel/helper-plugin-utils" "^7.24.7"
@@ -730,7 +730,7 @@
   dependencies:
     "@babel/helper-plugin-utils" "^7.24.7"
 
-"@babel/plugin-transform-template-literals@^7.24.7":
+"@babel/plugin-transform-template-literals@^7.0.0-0", "@babel/plugin-transform-template-literals@^7.24.7":
   version "7.24.7"
   dependencies:
     "@babel/helper-plugin-utils" "^7.24.7"
@@ -760,7 +760,7 @@
     "@babel/helper-create-regexp-features-plugin" "^7.24.7"
     "@babel/helper-plugin-utils" "^7.24.7"
 
-"@babel/plugin-transform-unicode-regex@^7.0.0", "@babel/plugin-transform-unicode-regex@^7.24.7":
+"@babel/plugin-transform-unicode-regex@^7.0.0", "@babel/plugin-transform-unicode-regex@^7.0.0-0", "@babel/plugin-transform-unicode-regex@^7.24.7":
   version "7.24.7"
   dependencies:
     "@babel/helper-create-regexp-features-plugin" "^7.24.7"
@@ -885,7 +885,7 @@
     "@babel/plugin-transform-react-jsx-development" "^7.24.7"
     "@babel/plugin-transform-react-pure-annotations" "^7.24.7"
 
-"@babel/preset-typescript@^7.13.0", "@babel/preset-typescript@^7.16.0":
+"@babel/preset-typescript@^7.13.0", "@babel/preset-typescript@^7.16.0", "@babel/preset-typescript@^7.16.7":
   version "7.24.7"
   dependencies:
     "@babel/helper-plugin-utils" "^7.24.7"
@@ -1116,6 +1116,8 @@
 
 "@isaacs/ttlcache@^1.4.1":
   version "1.4.1"
+  resolved "https://registry.npmjs.org/@isaacs/ttlcache/-/ttlcache-1.4.1.tgz"
+  integrity sha512-RQgQ4uQ+pLbqXfOmieB91ejmLwvSgv9nLx6sT6sD83s7umBypgg+OIBOBbEUiJXrfpnp9j0mRhYYdzp9uqq3lA==
 
 "@istanbuljs/load-nyc-config@^1.0.0":
   version "1.1.0"
@@ -1725,6 +1727,11 @@
     prompts "^2.4.2"
     semver "^7.5.2"
 
+"@react-native-community/masked-view@^0.1.11":
+  version "0.1.11"
+  resolved "https://registry.npmjs.org/@react-native-community/masked-view/-/masked-view-0.1.11.tgz"
+  integrity sha512-rQfMIGSR/1r/SyN87+VD8xHHzDYeHaJq6elOSCAD+0iLagXkSI2pfA0LmSXP21uw5i3em7GkkRjfJ8wpqWXZNw==
+
 "@react-native-vector-icons/common@^0.0.1-alpha.20":
   version "0.0.1-alpha.20"
   resolved "https://registry.npmjs.org/@react-native-vector-icons/common/-/common-0.0.1-alpha.20.tgz"
@@ -1745,6 +1752,8 @@
 
 "@react-native/assets-registry@0.75.3":
   version "0.75.3"
+  resolved "https://registry.npmjs.org/@react-native/assets-registry/-/assets-registry-0.75.3.tgz"
+  integrity sha512-i7MaRbYR06WdpJWv3a0PQ2ScFBUeevwcJ0tVopnFwTg0tBWp3NFEMDIcU8lyXVy9Y59WmrP1V2ROaRDaPiESgg==
 
 "@react-native/babel-plugin-codegen@0.75.3":
   version "0.75.3"
@@ -1814,6 +1823,8 @@
 
 "@react-native/community-cli-plugin@0.75.3":
   version "0.75.3"
+  resolved "https://registry.npmjs.org/@react-native/community-cli-plugin/-/community-cli-plugin-0.75.3.tgz"
+  integrity sha512-njsYm+jBWzfLcJcxavAY5QFzYTrmPtjbxq/64GSqwcQYzy9qAkI7LNTK/Wprq1I/4HOuHJO7Km+EddCXB+ByRQ==
   dependencies:
     "@react-native-community/cli-server-api" "14.1.0"
     "@react-native-community/cli-tools" "14.1.0"
@@ -1829,9 +1840,13 @@
 
 "@react-native/debugger-frontend@0.75.3":
   version "0.75.3"
+  resolved "https://registry.npmjs.org/@react-native/debugger-frontend/-/debugger-frontend-0.75.3.tgz"
+  integrity sha512-99bLQsUwsxUMNR7Wa9eV2uyR38yfd6mOEqfN+JIm8/L9sKA926oh+CZkjDy1M8RmCB6spB5N9fVFVkrVdf2yFA==
 
 "@react-native/dev-middleware@0.75.3":
   version "0.75.3"
+  resolved "https://registry.npmjs.org/@react-native/dev-middleware/-/dev-middleware-0.75.3.tgz"
+  integrity sha512-h2/6+UGmeMWjnT43axy27jNqoDRsE1C1qpjRC3sYpD4g0bI0jSTkY1kAgj8uqGGXLnHXiHOtjLDGdbAgZrsPaA==
   dependencies:
     "@isaacs/ttlcache" "^1.4.1"
     "@react-native/debugger-frontend" "0.75.3"
@@ -1867,6 +1882,8 @@
 
 "@react-native/gradle-plugin@0.75.3":
   version "0.75.3"
+  resolved "https://registry.npmjs.org/@react-native/gradle-plugin/-/gradle-plugin-0.75.3.tgz"
+  integrity sha512-mSfa/Mq/AsALuG/kvXz5ECrc6HdY5waMHal2sSfa8KA0Gt3JqYQVXF9Pdwd4yR5ClPZDI2HRa1tdE8GVlhMvPA==
 
 "@react-native/js-polyfills@0.75.3":
   version "0.75.3"
@@ -1899,12 +1916,16 @@
 
 "@react-native/normalize-colors@0.75.3":
   version "0.75.3"
+  resolved "https://registry.npmjs.org/@react-native/normalize-colors/-/normalize-colors-0.75.3.tgz"
+  integrity sha512-3mhF8AJFfIN0E5bEs/DQ4U2LzMJYm+FPSwY5bJ1DZhrxW1PFAh24bAPrSd8PwS0iarQ7biLdr1lWf/8LFv8pDA==
 
 "@react-native/typescript-config@0.75.3":
   version "0.75.3"
 
 "@react-native/virtualized-lists@0.75.3":
   version "0.75.3"
+  resolved "https://registry.npmjs.org/@react-native/virtualized-lists/-/virtualized-lists-0.75.3.tgz"
+  integrity sha512-cTLm7k7Y//SvV8UK8esrDHEw5OrwwSJ4Fqc3x52Imi6ROuhshfGIPFwhtn4pmAg9nWHzHwwqiJ+9hCSVnXXX+g==
   dependencies:
     invariant "^2.2.4"
     nullthrows "^1.1.1"
@@ -1920,6 +1941,15 @@
     query-string "^7.1.3"
     react-is "^16.13.0"
     use-latest-callback "^0.2.1"
+
+"@react-navigation/drawer@^6.7.2":
+  version "6.7.2"
+  resolved "https://registry.npmjs.org/@react-navigation/drawer/-/drawer-6.7.2.tgz"
+  integrity sha512-o4g2zgTZa2+oLd+8V33etrSM38KIqu8S/zCBTsdsHUoQyVE7JNRiv3Qgq/jMvEb8PZCqWmm7jHItcgzrBuwyOQ==
+  dependencies:
+    "@react-navigation/elements" "^1.3.31"
+    color "^4.2.3"
+    warn-once "^0.1.0"
 
 "@react-navigation/elements@^1.3.31":
   version "1.3.31"
@@ -3582,6 +3612,8 @@ chokidar@^3.4.2, chokidar@^3.5.3:
 
 chrome-launcher@^0.15.2:
   version "0.15.2"
+  resolved "https://registry.npmjs.org/chrome-launcher/-/chrome-launcher-0.15.2.tgz"
+  integrity sha512-zdLEwNo3aUVzIhKhTtXfxhdvZhUghrnmkvcAq2NoDd+LeOHKf03H5jwZ8T/STsAlzyALkBVK552iaG1fGf1xVQ==
   dependencies:
     "@types/node" "*"
     escape-string-regexp "^4.0.0"
@@ -3595,6 +3627,8 @@ chrome-trace-event@^1.0.2:
 
 chromium-edge-launcher@^0.2.0:
   version "0.2.0"
+  resolved "https://registry.npmjs.org/chromium-edge-launcher/-/chromium-edge-launcher-0.2.0.tgz"
+  integrity sha512-JfJjUnq25y9yg4FABRRVPmBGWPZZi+AQXT4mxupb67766/0UlhG8PAZCz6xzEMXTbW3CsSoE8PcCWA49n35mKg==
   dependencies:
     "@types/node" "*"
     escape-string-regexp "^4.0.0"
@@ -4173,6 +4207,8 @@ dayjs@^1.8.15:
 
 debug@^2.2.0:
   version "2.6.9"
+  resolved "https://registry.npmjs.org/debug/-/debug-2.6.9.tgz"
+  integrity sha512-bC7ElrdJaJnPbAP+1EotYvqZsb3ecl5wi6Bfi6BJTUcNowp6cvspg0jXznRTKDjm/E7AdgFBVeAPVMNcKGsHMA==
   dependencies:
     ms "2.0.0"
 
@@ -4185,6 +4221,8 @@ debug@^2.6.0:
 
 debug@^2.6.9:
   version "2.6.9"
+  resolved "https://registry.npmjs.org/debug/-/debug-2.6.9.tgz"
+  integrity sha512-bC7ElrdJaJnPbAP+1EotYvqZsb3ecl5wi6Bfi6BJTUcNowp6cvspg0jXznRTKDjm/E7AdgFBVeAPVMNcKGsHMA==
   dependencies:
     ms "2.0.0"
 
@@ -5565,12 +5603,16 @@ he@^1.2.0:
 
 hermes-estree@0.22.0:
   version "0.22.0"
+  resolved "https://registry.npmjs.org/hermes-estree/-/hermes-estree-0.22.0.tgz"
+  integrity sha512-FLBt5X9OfA8BERUdc6aZS36Xz3rRuB0Y/mfocSADWEJfomc1xfene33GdyAmtTkKTBXTN/EgAy+rjTKkkZJHlw==
 
 hermes-estree@0.23.1:
   version "0.23.1"
 
 hermes-parser@0.22.0:
   version "0.22.0"
+  resolved "https://registry.npmjs.org/hermes-parser/-/hermes-parser-0.22.0.tgz"
+  integrity sha512-gn5RfZiEXCsIWsFGsKiykekktUoh0PdFWYocXsUdZIyWSckT6UIyPcyyUIPSR3kpnELWeK3n3ztAse7Mat6PSA==
   dependencies:
     hermes-estree "0.22.0"
 
@@ -7168,6 +7210,8 @@ levn@~0.3.0:
 
 lighthouse-logger@^1.0.0:
   version "1.4.2"
+  resolved "https://registry.npmjs.org/lighthouse-logger/-/lighthouse-logger-1.4.2.tgz"
+  integrity sha512-gPWxznF6TKmUHrOQjlVo2UbaL2EJ71mb2CCeRs/2qBpi4L/g4LUVc9+3lKQ6DTUZwJswfM7ainGrLO1+fOqa2g==
   dependencies:
     debug "^2.6.9"
     marky "^1.2.2"
@@ -7316,6 +7360,8 @@ makeerror@1.0.12:
 
 marky@^1.2.2:
   version "1.2.5"
+  resolved "https://registry.npmjs.org/marky/-/marky-1.2.5.tgz"
+  integrity sha512-q9JtQJKjpsVxCRVgQ+WapguSbKC3SQ5HEzFGPAJMStgh3QjCawp00UKv3MTTAArTmGmmPUvllHZoNbZ3gs0I+Q==
 
 mdn-data@2.0.14:
   version "2.0.14"
@@ -7606,6 +7652,8 @@ mkdirp@^0.5.1, mkdirp@~0.5.1:
 
 mkdirp@^1.0.4:
   version "1.0.4"
+  resolved "https://registry.npmjs.org/mkdirp/-/mkdirp-1.0.4.tgz"
+  integrity sha512-vVqVZQyf3WLx2Shd0qJ9xuvqgAyKPLAiqITEtqW0oIUjzo3PePDd6fW9iFz30ef7Ysp/oiWqbhszeGWW2T6Gzw==
 
 ms@^2.1.1, ms@^2.1.3, ms@2.1.3:
   version "2.1.3"
@@ -7843,6 +7891,8 @@ open@^6.2.0:
 
 open@^7.0.3:
   version "7.4.2"
+  resolved "https://registry.npmjs.org/open/-/open-7.4.2.tgz"
+  integrity sha512-MVHddDVweXZF3awtlAS+6pgKLlm/JgxZ90+/NBurBoQctVOOB/zDdVjcyPzQ+0laDGbsWgrRkflI65sQeOgT9Q==
   dependencies:
     is-docker "^2.0.0"
     is-wsl "^2.1.1"
@@ -8877,6 +8927,11 @@ react-error-overlay@^6.0.11:
   resolved "https://registry.npmjs.org/react-error-overlay/-/react-error-overlay-6.0.11.tgz"
   integrity sha512-/6UZ2qgEyH2aqzYZgQPxEnz33NJ2gNsnHA2o5+o4wW9bLM/JYQitNP9xPhsXwC08hMMovfGe/8retsdDsczPRg==
 
+react-freeze@^1.0.0:
+  version "1.0.4"
+  resolved "https://registry.npmjs.org/react-freeze/-/react-freeze-1.0.4.tgz"
+  integrity sha512-r4F0Sec0BLxWicc7HEyo2x3/2icUTrRmDjaaRyzzn+7aDyFZliszMDOgLVwSnQnYENOlL1o569Ze2HZefk8clA==
+
 "react-is@^16.12.0 || ^17.0.0 || ^18.0.0", react-is@^18.0.0, react-is@^18.3.1:
   version "18.3.1"
 
@@ -8929,10 +8984,35 @@ react-native-pdf@^6.7.5:
     crypto-js "4.2.0"
     deprecated-react-native-prop-types "^2.3.0"
 
+react-native-reanimated@^3.15.4:
+  version "3.15.4"
+  resolved "https://registry.npmjs.org/react-native-reanimated/-/react-native-reanimated-3.15.4.tgz"
+  integrity sha512-jcpHE+MnsvSbClhHgAFoken7SnaHrUJ5gVA8BUw8S1j6rkrw2VzRpht6cxn14NlqYx5ytjfG9IXJDOzq8tFvfw==
+  dependencies:
+    "@babel/plugin-transform-arrow-functions" "^7.0.0-0"
+    "@babel/plugin-transform-class-properties" "^7.0.0-0"
+    "@babel/plugin-transform-classes" "^7.0.0-0"
+    "@babel/plugin-transform-nullish-coalescing-operator" "^7.0.0-0"
+    "@babel/plugin-transform-optional-chaining" "^7.0.0-0"
+    "@babel/plugin-transform-shorthand-properties" "^7.0.0-0"
+    "@babel/plugin-transform-template-literals" "^7.0.0-0"
+    "@babel/plugin-transform-unicode-regex" "^7.0.0-0"
+    "@babel/preset-typescript" "^7.16.7"
+    convert-source-map "^2.0.0"
+    invariant "^2.2.4"
+
 react-native-safe-area-context@^4.11.0:
   version "4.11.0"
   resolved "https://registry.npmjs.org/react-native-safe-area-context/-/react-native-safe-area-context-4.11.0.tgz"
   integrity sha512-Bg7bozxEB+ZS+H3tVYs5yY1cvxNXgR6nRQwpSMkYR9IN5CbxohLnSprrOPG/ostTCd4F6iCk0c51pExEhifSKQ==
+
+react-native-screens@^3.34.0:
+  version "3.34.0"
+  resolved "https://registry.npmjs.org/react-native-screens/-/react-native-screens-3.34.0.tgz"
+  integrity sha512-8ri3Pd9QcpfXnVckOe/Lnto+BXmSPHV/Q0RB0XW0gDKsCv5wi5k7ez7g1SzgiYHl29MSdiqgjH30zUyOOowOaw==
+  dependencies:
+    react-freeze "^1.0.0"
+    warn-once "^0.1.0"
 
 react-native-vector-icons@^10.2.0:
   version "10.2.0"
@@ -8956,8 +9036,10 @@ react-native-web@^0.19.12:
     postcss-value-parser "^4.2.0"
     styleq "^0.1.3"
 
-react-native@0.75.3:
+react-native@^0.75.3:
   version "0.75.3"
+  resolved "https://registry.npmjs.org/react-native/-/react-native-0.75.3.tgz"
+  integrity sha512-+Ne6u5H+tPo36sme19SCd1u2UID2uo0J/XzAJarxmrDj4Nsdi44eyUDKtQHmhgxjRGsuVJqAYrMK0abLSq8AHw==
   dependencies:
     "@jest/create-cache-key-function" "^29.6.3"
     "@react-native-community/cli" "14.1.0"
@@ -9123,6 +9205,8 @@ readdirp@~3.6.0:
 
 readline@^1.3.0:
   version "1.3.0"
+  resolved "https://registry.npmjs.org/readline/-/readline-1.3.0.tgz"
+  integrity sha512-k2d6ACCkiNYz222Fs/iNze30rRJ1iIicW7JuX/7/cozvih6YCkFZH+J6mAFDVgv0dRBaAyr4jDqC95R2y4IADg==
 
 recast@^0.21.0:
   version "0.21.5"
