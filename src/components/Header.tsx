@@ -9,7 +9,9 @@ const Header = ({ activePage, setActivePage }) => {
     <View style={styles.header}>
       <View style={styles.headerUpper}>
         <View style={styles.iconHome}>
+          <TouchableOpacity>
           <Octicons name="three-bars" size={25} color="#fff" />
+          </TouchableOpacity>
           <Text style={styles.headingTitle}>Home</Text>
         </View>
         <View style={styles.searchDots}>
