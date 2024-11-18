@@ -1,30 +1,33 @@
 import React from 'react';
-import { StyleSheet, Text, View, TouchableOpacity } from 'react-native';
+import {StyleSheet, Text, View, TouchableOpacity} from 'react-native';
 import Octicons from 'react-native-vector-icons/Octicons';
 import Icon from 'react-native-vector-icons/FontAwesome';
 import Entypo from 'react-native-vector-icons/Entypo';
 
-const Header = ({ activePage, setActivePage }) => {
+const Header = ({activePage, setActivePage}) => {
   return (
     <View style={styles.header}>
       <View style={styles.headerUpper}>
         <View style={styles.iconHome}>
           <TouchableOpacity>
-          <Octicons name="three-bars" size={25} color="#fff" />
+            <Octicons name="three-bars" size={25} color="#fff" />
           </TouchableOpacity>
           <Text style={styles.headingTitle}>Home</Text>
         </View>
         <View style={styles.searchDots}>
-          <Icon name="search" size={20} color="#fff" />
-          <Entypo name="dots-three-vertical" size={20} color="#fff" />
+          <TouchableOpacity>
+            <Icon name="search" size={20} color="#fff" />
+          </TouchableOpacity>
+          <TouchableOpacity>
+            <Entypo name="dots-three-vertical" size={20} color="#fff" />
+          </TouchableOpacity>
         </View>
       </View>
       <View style={styles.buttonContainer}>
         <TouchableOpacity
           style={styles.button}
-          onPress={() => setActivePage('HANDOUTS')} 
-          delayPressIn={0}
-        >
+          onPress={() => setActivePage('HANDOUTS')}
+          delayPressIn={0}>
           <Text style={styles.buttonText}>HANDOUTS</Text>
           {activePage === 'HANDOUTS' && <View style={styles.activeUnderline} />}
         </TouchableOpacity>
@@ -32,8 +35,7 @@ const Header = ({ activePage, setActivePage }) => {
         <TouchableOpacity
           style={styles.button}
           onPress={() => setActivePage('BOOKMARK')}
-          delayPressIn={0}
-        >
+          delayPressIn={0}>
           <Text style={styles.buttonText}>BOOKMARK</Text>
           {activePage === 'BOOKMARK' && <View style={styles.activeUnderline} />}
         </TouchableOpacity>
@@ -86,7 +88,7 @@ const styles = StyleSheet.create({
   button: {
     margin: 8,
     position: 'relative',
-    padding:2,
+    padding: 2,
   },
   activeUnderline: {
     position: 'absolute',
