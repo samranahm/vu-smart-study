@@ -16,13 +16,13 @@ const Stack = createStackNavigator<RootStackParamList>();
 const App = () => {
   return (
     <GestureHandlerRootView>
-    <NavigationContainer>
-      <Stack.Navigator initialRouteName="Home"
-      screenOptions={{ headerShown: false }} >
-        <Stack.Screen name="Home" component={HomeScreen} />
-        <Stack.Screen name="PDF" component={PDFReader} />
-      </Stack.Navigator>
-    </NavigationContainer>
+      <NavigationContainer>
+        <Stack.Navigator initialRouteName="Home"
+          screenOptions={{ headerShown: false }} >
+          <Stack.Screen name="Home" component={HomeScreen} />
+          <Stack.Screen name="PDF" component={PDFReader} />
+        </Stack.Navigator>
+      </NavigationContainer>
     </GestureHandlerRootView>
   );
 };
