@@ -1,10 +1,10 @@
 import React from 'react';
-import {StyleSheet, Text, View, TouchableOpacity} from 'react-native';
+import { StyleSheet, Text, View, TouchableOpacity } from 'react-native';
 import Octicons from 'react-native-vector-icons/Octicons';
 import Icon from 'react-native-vector-icons/FontAwesome';
 import Entypo from 'react-native-vector-icons/Entypo';
 
-const Header = ({activePage, setActivePage}) => {
+const Header = ({ activePage, setActivePage }) => {
   return (
     <View style={styles.header}>
       <View style={styles.headerUpper}>
