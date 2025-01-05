@@ -1,6 +1,6 @@
 import React from "react";
 import { View, StyleSheet, FlatList } from "react-native";
-import BookSection from "./BookSection";
+import BookSection from "../components/BookSection";
 
 const handoutData = [
       { id: 1, title : "ACC501 - Business Finance",  pdfUrl:"https://vukhanpur.com/handouts/ACC501_handouts_1_45.pdf" },
@@ -299,7 +299,7 @@ const handoutData = [
       { id: 294, title : "ZOO510 - Economic Zoology",  pdfUrl:"https://vukhanpur.com/handouts/ZOO510-Economic-Zoology-merged-ppt-handouts-(Topic-no-1-to-239).pdf"}, 
     ];
 
-const HandOuts = () => {
+const Handouts = () => {
   return (
     <View style={styles.body}>
       <FlatList
@@ -321,4 +321,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default HandOuts;
+export default Handouts;

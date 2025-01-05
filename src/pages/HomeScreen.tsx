@@ -1,8 +1,8 @@
 import React, {useState} from 'react';
 import {SafeAreaView, ScrollView, StatusBar, StyleSheet} from 'react-native';
 import {SafeAreaProvider} from 'react-native-safe-area-context';
-import HandOuts from '../components/Handouts';
-import BookMark from '../components/Bookmark';
+import Handouts from './Handouts';
+import BookMark from './Bookmark';
 import Header from '../components/Header';
 
 const HomeScreen = ()=> {
@@ -16,7 +16,7 @@ const HomeScreen = ()=> {
           contentInsetAdjustmentBehavior="automatic"
           style={styles.container}>
           {activePage === 'HANDOUTS' ?
-           <HandOuts /> 
+           <Handouts /> 
            :
            <BookMark />}
         </ScrollView>
