@@ -5,7 +5,7 @@ import Handouts from './Handouts';
 import BookMark from './Bookmark';
 import Header from '../components/Header';
 
-const HomeScreen = ()=> {
+function HomeScreen() {
   const [activePage, setActivePage] = useState('HANDOUTS');
 
   return (

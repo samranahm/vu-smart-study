@@ -4,7 +4,7 @@ import Octicons from 'react-native-vector-icons/Octicons';
 import Icon from 'react-native-vector-icons/FontAwesome';
 import Entypo from 'react-native-vector-icons/Entypo';
 
-const Header = ({ activePage, setActivePage }) => {
+function Header ({ activePage, setActivePage }) {
   return (
     <View style={styles.header}>
       <View style={styles.headerUpper}>

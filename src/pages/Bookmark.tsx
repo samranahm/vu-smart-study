@@ -2,7 +2,7 @@ import React from "react";
 import { View, StyleSheet } from "react-native";
 import BookSection from "../components/BookSection";
 
-const BookMark = () => {
+function BookMark() {
   return (
     <View style={styles.body}>
       <BookSection title="Fundamentals of Auditing" pdfUrl={"https://vukhanpur.com/handouts/EDU301.pdf"}/>

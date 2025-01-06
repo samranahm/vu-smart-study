@@ -2,6 +2,22 @@ import React from "react";
 import { View, StyleSheet, FlatList } from "react-native";
 import BookSection from "../components/BookSection";
 
+function Handouts() {
+  return (
+    <View style={styles.body}>
+      <FlatList
+        data={handoutData}
+        keyExtractor={(item) => item.id.toString()}
+        renderItem={({ item }) => (
+          <BookSection title={item.title} pdfUrl={item.pdfUrl} />
+          
+        )}
+        scrollEnabled={false}
+      />
+    </View>
+  );
+};
+
 const handoutData = [
       { id: 1, title : "ACC501 - Business Finance",  pdfUrl:"https://vukhanpur.com/handouts/ACC501_handouts_1_45.pdf" },
       { id: 2, title: "BIF401 - Bioinformatics I",  pdfUrl: "https://vukhanpur.com/handouts/BIF401_handouts.pdf" },
@@ -298,22 +314,6 @@ const handoutData = [
       { id: 293, title : "ZOO507 - Principles of Animal Ecology",  pdfUrl:"https://vukhanpur.com/handouts/ZOO507-Principles-of-Animal-Ecology_UPDATED_COURSE_2021_(_MERGED_PPT_TOPIC_1_TO_95_)_MID_TERM.pdf"}, 
       { id: 294, title : "ZOO510 - Economic Zoology",  pdfUrl:"https://vukhanpur.com/handouts/ZOO510-Economic-Zoology-merged-ppt-handouts-(Topic-no-1-to-239).pdf"}, 
     ];
-
-const Handouts = () => {
-  return (
-    <View style={styles.body}>
-      <FlatList
-        data={handoutData}
-        keyExtractor={(item) => item.id.toString()}
-        renderItem={({ item }) => (
-          <BookSection title={item.title} pdfUrl={item.pdfUrl} />
-          
-        )}
-        scrollEnabled={false}
-      />
-    </View>
-  );
-};
 
 const styles = StyleSheet.create({
   body: {

@@ -1,21 +1,14 @@
 import React, { useState } from 'react';
 import { View, Button, StyleSheet, Animated } from 'react-native';
-import { RouteProp } from '@react-navigation/native';
-import { StackNavigationProp } from '@react-navigation/stack';
-import Pdf from 'react-native-pdf'; 
-import { RootStackParamList } from '../App';
-
-type PDFReaderProps = {
-  navigation: StackNavigationProp<RootStackParamList, 'PDF'>;
-  route: RouteProp<RootStackParamList, 'PDF'>; 
-};
+import Pdf from 'react-native-pdf';
+import type { PDFReaderProps } from './types';
 
 const PDFReader: React.FC<PDFReaderProps> = ({ route, navigation }) => {
   const { pdfUrl } = route.params;
   const [loading, setLoading] = useState(true);
   const progress = new Animated.Value(0);
 
-  
+
   const startLoadingAnimation = (progressValue: number) => {
     Animated.timing(progress, {
       toValue: progressValue,
@@ -49,13 +42,13 @@ const PDFReader: React.FC<PDFReaderProps> = ({ route, navigation }) => {
         source={{ uri: pdfUrl, cache: true }}
         style={styles.pdf}
         onLoadProgress={(progressValue) => {
-        
+
           startLoadingAnimation(progressValue);
         }}
         onLoadComplete={(numberOfPages, filePath) => {
           console.log(`number of pages: ${numberOfPages}`);
           setLoading(false);
-          resetLoadingAnimation(); 
+          resetLoadingAnimation();
         }}
         onError={(error) => {
           console.error(error);
